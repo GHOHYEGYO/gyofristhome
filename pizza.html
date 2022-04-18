@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<p>
+    <form action="/login.php"></form>
+    <h1> 피자 주문하기</h1>
+    <hr>
+    <form action="/login.php"
+    <p>  고객 명: <input type="text" name="name" placeholder="홍길동"> </p>
+    <p>  전화번호: <input type="tel" name="tel"> </p>
+    <p>  E-mail: <input type="email" name="email"> </p>
+
+    <fieldset>
+        <legend> 피자 사이즈 </legend>
+            <p><input type="radio" name="size" value="Small"> Small</p> 
+            <p><input type="radio" name="size" value="Medium"> Medium</p>
+            <p><input type="radio" name="size" value="large"> large</p>
+
+    </fieldset>
+
+    <fieldset>
+        <legend> 토핑 선택 </legend>
+            <p><input type="checkbox" name="tp" value="bacon"> 베이컨</p> 
+            <p><input type="checkbox" name="tp" value="cheese"> 치즈</p>
+            <p><input type="checkbox" name="tp" value="onion"> 양파 </p>
+            <p><input type="checkbox" name="tp" value="mushroom"> 버섯 </p>
+
+    </fieldset>
+
+    <p>희망배송시간 <input type="time" value="12:30"></p>
+    <p> 배송시 요청사항</p> <input type="text"> </p>
+
+    <input type="Submit" value="주문하기" ">  <input type="reset" value="다시 선택하기" >
+</body>
+</html>
