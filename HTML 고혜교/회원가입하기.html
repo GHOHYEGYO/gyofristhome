@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입하기</title>
+</head>
+<body>
+   
+    <form action="/login.php"></form>
+            <h1>회원가입하기</h1> 
+            <table border="1">
+        <hr>
+
+
+            <tr>
+                <td colspan="2" style="text-align: center;"><h3>회원가입</h3></td>
+                </tr>
+                <form action="/login.php" method="GET">
+            <tr><td>이름</td> <td><input type="text" name="name"> </td></tr>
+
+            <tr><td>사용자ID</td> <td><input type="text" name="id"> </td> </tr>
+
+            <tr><td>암호</td> <td><input type="text" name="password"> </td> 
+
+            <tr><td>암호확인</td> <td><input type="text" name="cheak"> </td> </tr>
+
+            <tr><td>주민등록번호</td> <td> <input type="text" name="number" size="8">- <input type="text" size="8" name="number"> </td> </tr>
+
+            <tr><td>전화번호</td> <td> <input type="text" name="cell"  size="8">- <input type="text" name="cell" size="8"> <input type="text" name="cell" size="8"> </td> </tr>
+
+            <tr><td>성별</td> <td>
+                남자 <input type="radio" name="sung" value="남">  여자  <input type="radio" name="sung" value="여">
+                </td> </tr>
+
+            <tr><td>직업</td> <td><input type="text" list="wish">
+                <datalist id="wish">
+                    <option value="교사"></option>
+                    <option value="프로그래머"></option>
+                    <option value="수의사"></option>
+                </datalist> </td> </tr>
+
+                <tr><td>email 주소</td> <td><input type="text" name="email"> </td> </tr>
+
+                <tr><td colspan="2", align="center"> <input type="Submit" value="가입신청" ">  <input type="reset" value="취소" > </td> </tr> 
+
+            </table>
+</body>
+</html>
