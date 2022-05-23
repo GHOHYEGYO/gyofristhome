@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>폼꾸미기</title>
+    <style>
+        input[type=text] {
+            color: red;
+            border: 1px solid gray;  
+            border-radius: 2px;       
+        }
+        label {
+            color: red;
+        }
+        input[type=text]:focus{
+            font-size: 120%;
+        }
+        input[type=text]:hover {
+            background-color: aliceblue;
+        }
+        #fotname:focus {
+            font-size: 120%;
+        }
+        @keyframes tcolor {
+            0%{color: red;}
+            50%{color: green;}
+            100%{color: blue;}
+        }
+        @keyframes bomb {
+            0%{font-size: 500%;}
+            100%{font-size: 100%;}
+        }
+        #tform {
+            animation-name: tcolor;
+            animation-duration:3s; 
+            animation-iteration-count: infinite;
+        }
+        #tgmim:hover {
+        animation-name: bomb;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        }
+
+    </style>
+</head>
+<body>
+    <h3><span id="tform">폼</span> <span id="tgmim">꾸미기</span></h3>
+    <tr>
+        <form action="">
+            <p><label for="name" id="forname"> Name: </label>
+            <input type="text" id="name"></p>
+            <p><label for="name" id="gray"> Email: </label>
+            <input type="text" id="name"></p>
+            <p><label for="name" id="gray"> Comment: </label>
+            <input type="text" id="name"></p>
+            
+        </form>
+    </tr>
+</body>
+</html>
